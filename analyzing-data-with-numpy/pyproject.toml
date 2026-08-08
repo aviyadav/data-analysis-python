@@ -1,0 +1,20 @@
+[project]
+name = "analyzing-data-with-numpy"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Avinash Yadav", email = "aviyadav@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "numpy>=2.5.1",
+]
+
+[project.scripts]
+analyzing-data-with-numpy = "analyzing_data_with_numpy:main"
+main = "analyzing_data_with_numpy.main:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
