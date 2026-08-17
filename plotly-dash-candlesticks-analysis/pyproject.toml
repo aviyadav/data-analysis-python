@@ -1,0 +1,23 @@
+[project]
+name = "plotly-dash-candlesticks-analysis"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dash[cloud]>=4.4.1",
+    "dash-bootstrap-components>=2.0.4",
+    "pandas>=2.2.3,<3.0.0",
+    "pandas-ta",
+    "plotly>=6.9.0",
+    "requests>=2.34.2",
+    "websockets>=17.0.1",
+    "aiofiles>=25.1.0",
+]
+
+[project.scripts]
+plotly-dash-candlesticks-analysis = "plotly_dash_candlesticks_analysis:main"
+
+[build-system]
+requires = ["uv_build>=0.12.2,<0.13.0"]
+build-backend = "uv_build"
