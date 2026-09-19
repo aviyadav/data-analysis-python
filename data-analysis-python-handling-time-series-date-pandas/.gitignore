@@ -1,0 +1,58 @@
+# ---------------------------------------------------------------------------
+# Data: the 66 monthly CSVs are downloaded, not committed (about 12 MB).
+# Regenerate them with:  uv run python read_kaggle_data.py
+# git's `**` matches zero or more directories, so this also covers CSVs sitting
+# directly in data/. Only CSVs are ignored, so notes or fixtures placed in
+# data/ stay trackable.
+# ---------------------------------------------------------------------------
+/data/**/*.csv
+
+# ---------------------------------------------------------------------------
+# Virtual environment (created by `uv sync`)
+# ---------------------------------------------------------------------------
+.venv/
+venv/
+env/
+
+# ---------------------------------------------------------------------------
+# Generated caches and bytecode
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# tool caches
+.ruff_cache/
+.mypy_cache/
+.pytest_cache/
+.pyright/
+.hypothesis/
+.tox/
+.nox/
+.coverage
+
+# ---------------------------------------------------------------------------
+# Packaging / build artefacts
+# ---------------------------------------------------------------------------
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ---------------------------------------------------------------------------
+# Notebooks, editors, OS and local environment files
+# ---------------------------------------------------------------------------
+.ipynb_checkpoints/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+.env
+.env.*
+
+# ---------------------------------------------------------------------------
+# Intentionally NOT ignored:
+#   uv.lock  -- pins the exact dependency set, so it belongs in version control
+#   *.py, README.md, pyproject.toml, .gitignore
+# ---------------------------------------------------------------------------
