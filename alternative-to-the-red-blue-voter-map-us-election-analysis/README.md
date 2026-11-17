@@ -87,6 +87,8 @@ In Jupyter, `fig.show()` displays the chart inline.
 
 County population and 2026 Senate race vote margins are loaded from `https://bit.ly/48jF7Zi`. The script needs an internet connection to run.
 
+The data is from [NPR] (https://apps.npr.org/2026-election-results/texas.html?section=S), is stored in this [Gist] (https://gist.github.com/rlvaugh/193b2853afc08dc729ba53a8c9959cb0), and is accessed programmatically. It represents 99% of the total vote.
+
 ## Notes
 
 - Population and margin figures come from the online CSV. Check that source before relying on the numbers.
