@@ -1,0 +1,10 @@
+[project]
+name = "alternative-to-the-red-blue-voter-map-us-election-analysis"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+    "kaleido>=1.5.1",
+    "plotly[express]>=7.1.0",
+    "polars>=2.1.0",
+    "pyarrow>=26.0.1",
+]
