@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Environments and secrets
+.venv/
+.env
+
+# Tool caches
+.ruff_cache/
+.pytest_cache/
+.mypy_cache/
