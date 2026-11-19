@@ -1,0 +1,7 @@
+[project]
+name = "neurosymbolic-agents-with-z3-example-python"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+    "z3-solver>=5.4.1.0",
+]
